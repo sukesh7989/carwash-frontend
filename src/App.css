@@ -1,0 +1,878 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.loginform{
+   display: flex;
+   justify-content: end;
+  
+   align-items: center;
+   min-height: 100vh;
+   /* background: url("../public/car_wash.jpg") no-repeat ; */
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/car_wash.jpg');
+   background-size:cover;
+   background-position: center;
+ 
+
+}
+.con1{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, 0.2);
+
+    backdrop-filter: blur(30px);
+    color: #fff;
+   border-radius: 10px;
+   padding: 30px 40px;
+   margin-right: 5%;
+
+}
+.con1 h1{
+    text-align: center;
+    font-size: 35px;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* border: none; */
+    outline: none;
+    border: 2px solid rgba(255,255,255,3);
+    border-radius: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 20px  40px 20px 20px;
+} 
+.input-box input::placeholder{
+    color:#fff;
+}
+.icon{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+}
+.icon2{
+    position: absolute;
+    right: 20px;
+    top:75px;
+
+}
+.con3{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+
+.con3  input{
+margin-right: 4px;
+}
+.con3 a{
+color: #fff;
+text-decoration: none;
+}
+.con3 a:hover{
+color: blue;
+text-decoration: underline;
+}
+ .btns{
+width: 100%;
+height: 45px;
+background-color: #fff;
+border: none;
+outline: none;
+border-radius: 40px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+cursor: pointer;
+font-size: 16px;
+color: #333;
+font-weight: 700;
+margin-top: 40px;
+}
+.footer{
+font-size: 14.5px;
+text-align: center;
+margin: 20px 0 15px;
+}
+
+.footer p a{
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+}
+.footer p a:hover{
+text-decoration: underline;
+}
+
+/* Home */
+.Hom-con{
+    width: 60%;
+    height: 700px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    color: #fff;
+   
+}
+.Hom-con h1{
+    margin-top: 70px;
+    font-weight: 800;
+
+}
+ .img img{
+    width: 200px;
+    margin-left: 20px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+ .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 70%; */
+}
+.header .btn button{
+    padding: 5px 20px;
+    color: white;
+    background: transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    flex-wrap: wrap;
+    border: 2px solid blue ;
+}
+
+.hom-whole{
+ 
+    /* background: url('../public/carwash_img4.avif'); */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/carwash_img4.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+
+
+.nav ul{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 700;
+}
+.nav ul li{
+    list-style-type: none;
+   
+}
+.price{
+    display: flex;
+    justify-content: center;
+}
+
+.priceBG{
+    background: black ;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23% ;
+    justify-content: space-around;
+   
+    flex-wrap: wrap;
+    
+}
+
+.sedan-container{
+    width: 100%;
+    padding: 5px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 3px solid #ff2b2b;    
+    transition: 1s all;
+}
+
+.middle-nav{
+    background: black;
+}
+
+/* .middle-nav .nav ul li{
+   text-transform: uppercase;
+   font-size: 18px;
+   background: black;
+   padding: 5px 8px;
+   color: white;
+   border-radius: 10px;
+   border: 2px solid #ff2b2b ;
+   cursor: pointer;
+   
+}
+.middle-nav .nav ul li:hover{
+    background: white;
+    color: black;
+} */
+.button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .btn-selected{
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+
+.form{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height:40px;
+}
+
+@keyframes card {
+    from{
+        transform: rotateY(0deg);
+        color: black;
+        background: white;
+    }
+  
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.sedan-container:hover{
+    /* transform: rotateZ(360deg); */
+    /* animation: card 0.6s  linear ; */
+    /* transform: translateY(-50px); */
+    color: black;
+    background: white;
+
+    /* transition: transform 1s ; */
+    /* transform: scale(1.1); */
+}
+.sedan-container h4{
+    line-height: 50px;
+}
+
+span{
+    color: red;
+}
+.sedan-container button{
+    color: white;
+    background: black;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border:  2px solid red;
+    border-radius: 20px;
+}
+
+.cards{
+    display: flex;
+    /* grid-template-columns: 20% 20% 20% 20%; */
+    justify-content: space-around;
+    padding: 10px;
+    width: 80%; 
+    height: 25vh;
+    margin: 30px auto;
+    
+}
+.cards .card{
+    width: 22%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: black;
+}
+.second-cards{
+    width: 80%;
+    height: 25vh;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom :290px;
+
+
+}
+.second-cards .card{
+    width: 22%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: #E4171E;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+.second-cards .card:hover{
+ transform: translateY(-75px);
+ transition: transform 0.6s;
+
+}
+.react-icons{
+    font-size: 80px;
+}
+.chooseBar{
+    height: 33vh;
+    flex-wrap: wrap;
+}
+.feedback form{
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about{
+    /* background: url('../public/carwash_img2.avif'); */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/carwash_img2.avif');
+    background-size:cover;
+    background-position: center;
+    background-size: cover;
+    background-position: fixed ;
+    
+   
+}
+.aboutUs{
+    width: 85%;
+    margin: auto;
+    
+  
+}
+.about h1{
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.subDiv{
+    display: flex;
+    align-items: center;
+  
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    
+}
+.content{
+    padding: 10px;
+    color: white;
+}
+
+
+.about h3{
+    text-align: center;color: white;
+}
+.about .container1{
+    margin: 50px 0px ;
+    width: 130%;
+    height: 420px;
+    background: url('../public/carwash_girl.jpg');
+    background-size: cover;
+    background-position: center;
+    animation:  girl  30s  infinite;
+
+}
+.vision-mission{
+    display: flex;
+}
+.mission ul li , .vision p{
+    color: white;
+}
+.mi , .vi{
+    text-transform: uppercase;
+    color: red;
+    text-decoration: underline;
+}
+.mi{
+    margin-left: 30px;
+}
+
+@keyframes girl {
+    0%{
+        background: url('../public/carwash_girl.jpg');
+    }
+    25%{
+        background: url('../public/carwash_girl2.jpg');
+        background-size: cover;
+        background-position: center;
+
+        
+    }
+    50%{
+        background: url('../public/Aboutus2.png');
+        background-size: cover;
+        background-position: center;
+        
+    
+    }
+    75%{
+        background: url('../public/Aboutus_img1.png');
+        background-size: cover;
+        background-position: center;
+    
+    }
+    100%{
+        background: url('../public/carwash_girl4.jpg');
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+}
+
+
+ .gallery{
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+.gallery h1{
+    text-align: center;
+}
+.gallery .gallery-img{
+    text-align: center;
+}
+.gallery .gallery-img img{
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+
+
+
+
+.timeform label{
+    margin-right: 40px;
+}
+.time{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.yourwash{
+    margin: 20px 40px;
+}
+.yourwash p{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+}
+.yourwash-container{
+    margin: 10px auto;
+}
+.icons{
+    font-size: 20px;
+    color: green;
+}
+.time  {
+    font-size:17px;
+}
+.workerDetails{
+    display: flex;
+    gap: 50px;
+}
+.workerDetails img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+.worker-rating{
+    display: flex;
+    align-items: center;
+    gap: 10PX;
+}
+.worker-rating h5{
+    position: relative;
+    top: 2px;
+}
+.worker h4{
+    font-size: 17px;
+}
+.worker-rating h4{
+    color: gold;
+}
+.call h2{
+    color: white;
+    background: blue;
+    font-size: 25px;
+    padding: 2px 7px 5px 7px ;
+    border-radius: 50%;
+}
+.yourwash input{
+    border: none;
+    border-top: 1px solid grey;
+    position: relative;
+    top: 20px;
+}
+.yourwashDiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+   
+    .feed{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        height: 80vh;
+        width: 60%;
+        margin: 0px auto;
+        text-align: center; 
+        flex-wrap: wrap;
+    }
+    .feedback1{
+        padding: 20px;
+        /* text-align: center; */
+        border: 1px solid green;
+        width: 100%;
+        /* flex-wrap: wrap; */
+        border-radius: 20px;
+
+    }
+    .tab{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    .common_tab p{
+        border-radius: 10px;
+        border: 1px solid lightgray;
+    }
+    .tab-2 , .tab-3{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+    }
+     .tab-3 p{
+        width: 60%;
+    }
+
+    .tab-2  p{
+        width: 60%;
+
+    }
+    .emojis h2 span{
+        font-weight: 700;
+        color: green;
+    }
+    .feeback-button{
+        margin-top: 30px;
+        background-color: blue;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+    }
+    
+    
+    
+
+@media screen and (max-width:396px) {
+    .workerDetails img{
+        width: 60px;
+        height: 50px;
+       
+    }
+    .workerDetails{
+       width: 100%;
+       gap: 0;
+       justify-content: space-around;
+    }
+    .yourwash{
+        margin: 10px 10px;
+    }
+    .yourwash-container .time{
+        font-size: 15px;
+    }
+    .worker h4 , .worker-rating h5{
+        font-size: 15px;
+    }
+    .call h2{
+        position: relative;
+        top: 10px;
+        font-size: 25px;
+    } 
+    .content p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:634px) {
+    .yourwash{
+        margin: none;
+        
+    }
+    .yourwash-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:433px) {
+    .worker h4{
+        font-size: 17px;
+    }
+    .workerDetails img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:446px) {
+    .yourwash input{
+        display: none;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .con1{
+        margin: 20px;
+    }
+    .loginform{
+        background: black;
+    }
+    .priceBG{
+        grid-template-columns: 100% ;
+       
+    }
+    .sedan-container{
+        width: 100%;
+       ;
+    }
+
+}
+@media screen and (max-width:1245px){
+    .priceBG{
+        padding:0px 20px;
+       grid-template-columns: 50% 50%;
+
+    }
+    .cards ,.second-cards {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 50%;
+    }
+    .subDiv{
+        backdrop-filter: none;
+    }
+    .subDiv .container1{
+        display: none;
+    }
+    .subDiv .content{
+        margin-top: 0px;
+    }
+    .subDiv .content p{
+        font-size: 17px;
+    }
+    .vision-mission{
+        margin-top: 0px;
+    }
+    
+  
+}
+
+@media screen and (max-width:736px) {
+    .about{
+        background: #000;
+    }
+    .subDiv .content {
+        margin: 0;
+    }
+    .subDiv .content p{
+        font-size: 15px;
+}
+    .vision-mission{
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:520px) {
+    .middle-nav .nav ul li{
+        font-size: 13px;
+        border: none;
+        padding: 5px 0px;
+    }
+    .priceBG{
+        grid-template-columns: 100% ;
+       
+       
+    }
+    .sedan-container{
+        width: 80%;
+       ;
+    }
+    .subDiv .content{
+        font-style: 10px;
+        margin: 0;
+    }
+    .aboutUs h3{
+        font-size: 15px;
+        margin: 0;
+    }
+    .vision-mission{
+        font-size: 12px;
+    }
+    .feed{
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+    }
+   
+}
+@media screen and (max-width: 564px){
+    .yourwash-container .time{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:836px){
+    .Hom-con{
+        width: 100%;
+       
+    }
+    .hom-whole{
+        background-position: center;
+        background: url("../public/carwash_img3.avif");
+        background-position: center;
+    }
+   
+    .chooseBar{
+        display: none;
+    }
+   
+}
+@media screen and (max-width:588px) {
+    .header .img img{
+        width: 100px;
+        height: 100px;
+    }
+    .header .btn button{
+        font-size: 10px;
+    }
+    .vision-mission{
+        flex-direction: column;
+    }
+    .vision-mission .vision{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:746px) {
+    .btn button{
+        font-size: 15px;
+        padding: 0;
+    }
+    .header .img img{
+        width: 100px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:489px) {
+    .header .btn button{
+        font-size: 8px;
+        padding: 5px 5px;
+    }
+}
+
