@@ -15,7 +15,7 @@ const Your_washes = () => {
     console.log( customer_data);
 
     const yourwashes =async()=>{
-    let data = await  axios.get(`http://localhost:8000/yourwashes/${customer_data._id}`)
+    let data = await  axios.get(`https://mern-opal-sigma.vercel.app/yourwashes/${customer_data._id}`)
         console.log(data .data);
         setYourwash(data.data)
         console.log(data.data);

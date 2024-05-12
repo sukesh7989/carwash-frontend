@@ -16,7 +16,7 @@ const Email = () => {
         } else {
             setEmail(e.target.value)
             let response = await
-                axios.post("http://localhost:8000/verifyEmail", { email: e.target.value })
+                axios.post("https://mern-opal-sigma.vercel.app/verifyEmail", { email: e.target.value })
             console.log(response);
             if (response.status === 200) {
                 setSuccess(true)

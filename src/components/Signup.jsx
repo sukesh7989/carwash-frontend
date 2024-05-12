@@ -42,7 +42,7 @@ const Signup = () => {
         toast.error("please enter your details")
       }
       else{
-        let data = await axios.post("http://localhost:8000/signup" , {email , password , confirmpassword})
+        let data = await axios.post("https://mern-opal-sigma.vercel.app/signup" , {email , password , confirmpassword})
         console.log(data);
         if(data.status === 200){
           toast.success("Account created Successfully")

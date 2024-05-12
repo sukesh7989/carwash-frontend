@@ -39,7 +39,7 @@ const {service,price}=selectedService;
 
   const submitHandler =async(e)=>{
     e.preventDefault( )
-    let response = await axios.post ("http://localhost:8000/createWash", {date ,address, customerId:convertedData._id , number , carnumber : carno,service,price , time ,carModel} );
+    let response = await axios.post ("https://mern-opal-sigma.vercel.app/createWash", {date ,address, customerId:convertedData._id , number , carnumber : carno,service,price , time ,carModel} );
     handleClose();
    
     toast.success("Wash Created Successfully");

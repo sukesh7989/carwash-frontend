@@ -18,7 +18,7 @@ const UpdatePassword = () => {
         e.preventDefault()
      try {
         let response =await
-         axios.post("http://localhost:8000/updatePassword",{password , confirm , email: localStorage.getItem("email")});
+         axios.post("https://mern-opal-sigma.vercel.app/updatePassword",{password , confirm , email: localStorage.getItem("email")});
         if(response.status ===200){
             toast.success("Updated Password Successfully")
             navigate('/login')
