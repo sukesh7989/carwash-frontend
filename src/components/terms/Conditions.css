@@ -2,3 +2,7 @@
 .con h3{
     text-align: center;
 }
+.con{
+    width: 90%;
+    margin: auto;
+}

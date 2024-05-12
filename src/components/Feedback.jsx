@@ -34,7 +34,7 @@ const Feedback = () => {
   const submitHandler = async (e) => {
     setLoader(true)
     e.preventDefault();
-    let response = await axios.post("http://localhost:8000/feedback", { value, pro, feedback, email: localdata.email });
+    let response = await axios.post("http://localhost:5173/feedback", { value, pro, feedback, email: localdata.email });
     setLoader(false)
     navigate('/home');
 
@@ -93,7 +93,7 @@ const Feedback = () => {
             <p onClick={() => { commonTab1("cleaner's behaviour") }} style={{ cursor: 'pointer', backgroundColor: pro.includes("cleaner's behaviour") ? "blue" : "#fff", color: pro.includes("cleaner's behaviour") ? "white" : "black" }}>cleaner's behaviour</p>
             <p onClick={() => { commonTab1("Location") }} style={{ cursor: 'pointer', backgroundColor: pro.includes("Location") ? "blue" : "#fff", color: pro.includes("Location") ? "white" : "black" }}>Location</p>
           </div>
-          <div>
+          <div className='review'>
             <h6>say something about your experience ?</h6>
             {/* <textarea name="" id="" cols="55" rows="5" placeholder='  say somethinng about your experience'></textarea> */}
             <input type="text" required placeholder='    say somethinng about your experience' onChange={textareaHandler} style={{ width: "90%", height: '10vh', borderRadius: '10px' }} />

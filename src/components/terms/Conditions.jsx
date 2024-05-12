@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../terms/Conditions.css'
 import { GoDotFill } from "react-icons/go";
 import Footer from '../Footer';
+import Header from '../Header';
 
 const Conditions = () => {
  useEffect(()=>{
@@ -15,6 +16,10 @@ const Conditions = () => {
   scrollToTop()
  },[])
   return (
+    <div>
+    <div style={{backgroundColor:"black"}}>
+      <Header/>
+    </div>
     <div className='con'>
         <h3>Terms and Conditions, Refund Policy, Disclaimer</h3>
         
@@ -36,7 +41,9 @@ const Conditions = () => {
         <li style={{color:'red' , fontWeight:'600' }}><GoDotFill />OPTIONAL TOOLS</li>
         <p>We may provide you with access to third-party tools over which we neither monitor nor have any control nor input. You acknowledge and agree that we provide access to such tools ”as is” and “as available” without any warranties, representations or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools. Any use by you of optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s). We may also, in the future, offer new services and/or features through the website (including, the release of new tools and resources). Such new features and/or services shall also be subject to these Terms of Service.</p>
         </ul>
-        <Footer/>
+    </div>
+    <Footer/>
+
     </div>
   )
 }

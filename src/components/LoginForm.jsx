@@ -36,13 +36,11 @@ const LoginForm = () => {
      e.preventDefault();
     try{
       if(email === "" || password === ""  ){
-        toast.error("please enter your details" ,{position: "bottom-left",width:"900px"})
+        toast.error("please enter your details")
       }
-      // else if(data.status === 400){
-      //   toast.error("please check your password")
-      // }
+
       else{
-        let data = await axios.post("https://backend-five-umber.vercel.app/login" , {email , password})
+        let data = await axios.post("http://localhost:8000/login" , {email , password})
         console.log(data);
         if(data.status === 200){
           let convertedData =  JSON.stringify(data.data)
@@ -54,6 +52,7 @@ const LoginForm = () => {
     }
     catch(err){
       console.log(err);
+      // toast.error(err.response.data.message)
       toast.error("invalid password")
     }
 
@@ -72,11 +71,13 @@ const LoginForm = () => {
      </div>
         <div className="con3">
         <label><input className='check_box' type="checkbox" />Remember me</label>
-        <a href="#">Forgot password..?</a>
+        <a href="#" onClick={()=>{
+          navigate('/forgotpassword')
+        }}>Forgot password..?</a>
         </div>
         <button className='btns' type='submit'>Login</button>
 
-       <div className="footer">
+       <div className="footer2">
        <p>Don't have an account ? <Link to="/">Signup</Link></p>
        </div>
 

@@ -48,12 +48,12 @@ const Home = () => {
     setShow(true)
   };
   return (
-    <div>
+    <div id='home'>
     <ToastContainer/>
     <div className='hom-whole' >
     <Header/>
       <div className="Hom-con">
-     <h1> Welcome to  <br /> <span>Degree Wala Car Wash</span>  <br />where we provide professional car cleaning services to keep your vehicle looking its best.</h1>
+     <h1> Welcome to  <br /> <span>Spray and Wash</span>  <br />where we provide professional car cleaning services to keep your vehicle looking its best.</h1>
       </div>
      
       

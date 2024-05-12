@@ -1,0 +1,24 @@
+.policy{
+    width: 90%;
+    margin: auto;
+}
+.policy h5{
+text-align: center;
+color: red;
+}
+ul li{
+    font-weight: 700;
+}
+h6{
+    font-size: 8px;
+    margin: 2px 20px 0px 0;
+}
+.disclaimer h4{
+    color: red;
+    text-align: center;
+}
+.disclaimer h5{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}

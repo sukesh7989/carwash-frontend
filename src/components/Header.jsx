@@ -16,24 +16,24 @@ const Header = () => {
         </div>
 
         <div className="btn" style={{ border: 'none' }}>
-          <NavLink
+          <NavLink  
             to='/feedback'
-            style={({isActive})=>({
-              backgroundColor:isActive
-              ? "blue":"#fff",color:isActive?"#fff":"#000"
-            })}
-          
-          >
-            {/* <button style={{ marginRight: '20px' }} > */}
-            Feedback
-            {/* </button> */}
+            style={({ isActive  }) => ({
+              backgroundColor: isActive
+                ? "blue" : "", color: isActive ? "#fff" : "#000",textDecoration:'none' , padding:"5px 10px" , borderRadius:'20px', border:'2px solid blue' , color:'white' , fontWeight:'700' , fontSize:"12px"
+            })} className="headerbtn">
+           FEEDBACK
           </NavLink>;
-          {/* <button style={{ marginRight: '20px' }} onClick={() => {
-            navigate('/feedback')
-          }}>Feedback</button> */}
-          <button style={{ marginRight: '20px' }} onClick={() => {
-            navigate('/yourwashes')
-          }}> Your Washes</button>
+
+          <NavLink
+            to='/yourwashes'
+            style={({ isActive }) => ({
+              backgroundColor: isActive
+                ? "blue" : "", color: isActive ? "#fff" : "#000" ,textDecoration:'none' , padding:"5px 10px" , borderRadius:'20px', border:'2px solid blue' , color:'white' , fontWeight:'700' , fontSize:"12px" 
+            })}className="headerbtn" >
+            YOUR WASHES
+          </NavLink>;
+  
           <button onClick={() => {
             localStorage.clear();
             navigate("/")

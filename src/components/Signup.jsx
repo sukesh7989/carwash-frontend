@@ -52,8 +52,12 @@ const Signup = () => {
          }
     }
     catch(err){
-      console.log(err);
-      toast.error("you already have an account")
+      if(err?.response?.data){
+        toast.error(err.response.data)
+      }else{
+        toast.error("Something went wrong")
+
+      }
     }
 
     }
@@ -77,7 +81,7 @@ const Signup = () => {
       
          <button className='btns' type='submit'>signup</button> 
         
-       <div className="footer">
+       <div className="footer2" >
        <p> have an account ? <Link to="/login">login</Link></p>
        </div>
 

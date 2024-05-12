@@ -16,6 +16,10 @@ import SlidingCards from './components/SlidingCards'
 import Footer from './components/Footer'
 import About from './components/About'
 import Conditions from './components/terms/Conditions'
+import Forgotpassword from './components/Forgotpassword'
+import Privacy_policy from './components/privacy_Policy/Privacy_policy'
+import Otp from './components/Otp'
+import UpdatePassword from './components/UpdatePassword'
 
 const App = () => {
 
@@ -32,12 +36,15 @@ const App = () => {
             <Route path='*' element={<Error/>}/>
              <Route path='/yourwashes' element={<Your_washes/>}/>
              <Route path='chooseus'  element={<Choose/>}/>
-             <Route path='feedback' element={<Feedback/>}/>
+             <Route path='/feedback' element={<Feedback/>}/>
              <Route path='slidingcards' element={<SlidingCards/>}/>
             <Route path='footer' element={<Footer/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/conditions' element={<Conditions/>}/>
-
+            <Route path='/privacy_policy' element={<Privacy_policy/>}/>
+            <Route path='/forgotpassword' element={<Forgotpassword/>}/>
+              <Route path='otp'  element={<Otp/>}/>
+              <Route path='/updatepassword'  element={<UpdatePassword/>}/>
           </Routes>
     </BrowserRouter>
   )

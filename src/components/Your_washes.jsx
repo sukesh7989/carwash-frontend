@@ -38,10 +38,10 @@ const Your_washes = () => {
                     <div className='yourwash'>
                         <p>Wash Details : <input type="text" /> </p>
                        <div className="yourwash-container">
-                       <h1 className='time'>  <h1 className='icons'><IoTimeOutline /></h1>   {obj.time} </h1>
+                       <h1 className='time'>  <h1 className='icons1'><IoTimeOutline /></h1>   {obj.time} </h1>
 
-                          <h1 className='time'>  <h1 className='icons'><FaCar /></h1>   {obj.carModel} , {obj.carnumber}</h1>
-                          <h1 className='time'>  <h1 className='icons'><CiLocationOn /></h1>   {obj.address} </h1>
+                          <h1 className='time'>  <h1 className='icons1'><FaCar /></h1>   {obj.carModel} , {obj.carnumber}</h1>
+                          <h1 className='time'>  <h1 className='icons1'><CiLocationOn /></h1>   {obj.address} </h1>
                        </div>
 
                        <div>
