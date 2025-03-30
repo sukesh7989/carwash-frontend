@@ -67,7 +67,7 @@ const Feedback = () => {
             <h2>   {value === 4 && <span style={{ color: 'blue' }}>Excellent</span>}</h2>
 
             <h1> {value === 5 && <span>😍</span>} </h1>
-            <h2> {value === 5 && <span style={{ color: 'green' }}>Love You Bangaram</span>} </h2>
+            <h2> {value === 5 && <span style={{ color: 'green' }}>wounderfull</span>} </h2>
           </div>
           <div className='feedback2'>
             <Rating
