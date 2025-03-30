@@ -34,7 +34,7 @@ const Feedback = () => {
   const submitHandler = async (e) => {
     setLoader(true)
     e.preventDefault();
-    let response = await axios.post("https://mern-opal-sigma.vercel.app/feedback", { value, pro, feedback, email: localdata.email });
+    let response = await axios.post("https://carwash-backend-beryl.vercel.app/feedback", { value, pro, feedback, email: localdata.email });
     setLoader(false)
     navigate('/home');
 

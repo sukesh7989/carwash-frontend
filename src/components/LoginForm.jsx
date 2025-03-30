@@ -40,7 +40,7 @@ const LoginForm = () => {
       }
 
       else{
-        let data = await axios.post("https://mern-opal-sigma.vercel.app/login" , {email , password})
+        let data = await axios.post("https://carwash-backend-beryl.vercel.app/login" , {email , password})
         console.log(data);
         if(data.status === 200){
           let convertedData =  JSON.stringify(data.data)

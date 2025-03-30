@@ -14,7 +14,7 @@ const Otp = () => {
         e.preventDefault();
 
         try {
-            let res = axios.post("https://mern-opal-sigma.vercel.app/verifyOtp", { email: localStorage.getItem("email"), otp: change })
+            let res = axios.post("https://carwash-backend-beryl.vercel.app/verifyOtp", { email: localStorage.getItem("email"), otp: change })
             toast.success("Verified OTP successfully")
 
         } catch (error) {
